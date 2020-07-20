@@ -1,0 +1,28 @@
+// OU Exclusivo - operador binário
+
+// V xor V -> false
+// V xor F -> true
+// F xor V -> true
+// F sor F -> false
+
+
+// Negação lógica - operador unário
+
+// !V -> false
+// !F -> true
+
+function compras(trabalho1, trabalho2) {
+  const comprarSorvete = trabalho1 || trabalho2
+  const comprarTv50 = trabalho1 && trabalho2
+  // const comprarTv32 = !!(trabalho1 ^trabalho2) bitwise xor 
+  const comprarTv32 = trabalho1 != trabalho2 // simulando ou exclusivo
+  const manterSaudavel = !comprarSorvete // operador unário
+
+  // retornando um objeto, o ES2015 permite retorno apenas da variável
+  return { comprarSorvete, comprarTv50, comprarTv32, manterSaudavel }
+}
+
+console.log(compras(true, true));
+console.log(compras(true, false));
+console.log(compras(false, true));
+console.log(compras(false, false));

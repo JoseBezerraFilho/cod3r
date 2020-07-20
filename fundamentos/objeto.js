@@ -7,10 +7,10 @@
 
 // Objeto - além dos valores acima, o objeto literal, Data(formato Date), Função, undefined são acrescentados aos tipos do objeto.
 
-// Por esta razão o MongoDB usa o BSON que além de armazernar o JSON em formato binário, adciona suporte a outros tipos de dados como: integer, double, date, byte array, objeto BSON, array BSON, código Javascript, dados binários em MD5 e expressões regulares.
+// Por esta razão o MongoDB usa o BSON que além de armazenar o JSON em formato binário, adiciona suporte a outros tipos de dados como: integer, double, date, byte array, objeto BSON, array BSON, código Javascript, dados binários em MD5 e expressões regulares.
 
 // Onde diferem então?
-// Criaçao de atributos - no JSON é necessário uso de aspas duplas enquanto no objeto apenas o nome é necessário.
+// Criação de atributos - no JSON é necessário uso de aspas duplas enquanto no objeto apenas o nome é necessário.
 
 let objeto = {
   umaProp: "Lorem Ipsum"
